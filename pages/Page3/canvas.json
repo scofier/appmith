@@ -94,9 +94,6 @@
                   "key": "primaryColumns.delay_rate.computedValue"
                 },
                 {
-                  "key": "primaryColumns.total_task.computedValue"
-                },
-                {
                   "key": "primaryColumns.finish_count.computedValue"
                 },
                 {
@@ -107,6 +104,12 @@
                 },
                 {
                   "key": "primaryColumns.real_cost.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total_task.displayText"
+                },
+                {
+                  "key": "primaryColumns.total_task.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -174,7 +177,7 @@
                   "id": "total_task",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "url",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -184,8 +187,10 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "总任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "cellBackground": ""
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( navigateTo(\"Page1\",\"\")))}}",
+                  "cellBackground": "",
+                  "iconName": "",
+                  "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}"
                 },
                 "finish_count": {
                   "index": 4,
@@ -267,7 +272,7 @@
               "delimiter": ",",
               "key": "cs1sv4qxvx",
               "derivedColumns": {},
-              "rightColumn": 50,
+              "rightColumn": 63,
               "textSize": "0.875rem",
               "widgetId": "4hal0x3h2b",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
