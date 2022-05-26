@@ -46,7 +46,7 @@
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 9,
-              "bottomRow": 37,
+              "bottomRow": 61,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -334,7 +334,7 @@
                   "labelColor": "#FFFFFF"
                 }
               },
-              "rightColumn": 49,
+              "rightColumn": 50,
               "textSize": "0.875rem",
               "widgetId": "4hal0x3h2b",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -369,7 +369,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "isVisiblePagination": true,
+              "isVisiblePagination": false,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
                 "task": 245,
