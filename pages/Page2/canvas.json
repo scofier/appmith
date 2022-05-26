@@ -19,13 +19,14 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 720,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "Users",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -42,7 +43,7 @@
                 "dob",
                 "phoneNo"
               ],
-              "isVisibleDownload": true,
+              "isVisibleDownload": false,
               "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
@@ -95,6 +96,9 @@
                 },
                 {
                   "key": "primaryColumns.phoneNo.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 5,
@@ -106,7 +110,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -116,7 +120,9 @@
                   "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
                   "buttonColor": "#03B365",
                   "menuColor": "#03B365",
-                  "labelColor": "#FFFFFF"
+                  "labelColor": "#FFFFFF",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "id": {
                   "index": 0,
@@ -125,7 +131,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -133,7 +139,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "name": {
                   "index": 1,
@@ -142,7 +150,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -150,7 +158,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "createdAt": {
                   "index": 2,
@@ -159,7 +169,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -167,7 +177,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "createdAt",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "updatedAt": {
                   "index": 3,
@@ -176,7 +188,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -184,7 +196,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "updatedAt",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.updatedAt))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.updatedAt))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "gender": {
                   "index": 5,
@@ -193,7 +207,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -201,7 +215,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "gender",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "avatar": {
                   "index": 6,
@@ -210,7 +226,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -218,7 +234,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "avatar",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "email": {
                   "index": 7,
@@ -227,7 +245,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -235,7 +253,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "email",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.email))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "address": {
                   "index": 8,
@@ -244,7 +264,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -252,7 +272,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "address",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.address))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.address))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "role": {
                   "index": 9,
@@ -261,7 +283,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -269,7 +291,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "role",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.role))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.role))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "dob": {
                   "index": 10,
@@ -278,7 +302,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -286,7 +310,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "dob",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "phoneNo": {
                   "index": 11,
@@ -295,7 +321,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -303,16 +329,20 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "phoneNo",
-                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.phoneNo))}}"
+                  "computedValue": "{{Users.sanitizedTableData.map((currentRow) => ( currentRow.phoneNo))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "61dyn7w89a",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 39,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "7ntdhf2y0y",
-              "isVisibleFilters": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
               "tableData": "{{getUsers.data}}",
               "isVisible": true,
               "label": "Data",
@@ -325,6 +355,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -334,6 +382,7 @@
               }
             },
             {
+              "boxShadow": "none",
               "widgetName": "Input1",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -352,6 +401,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "defaultText"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "labelPosition": "Left",
@@ -359,9 +411,11 @@
               "inputType": "TEXT",
               "isDisabled": false,
               "key": "b27fx4g94a",
+              "labelTextSize": "0.875rem",
               "isRequired": false,
               "rightColumn": 64,
               "widgetId": "sh4ayxoz3u",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "label": "Label",
               "version": 2,
@@ -369,10 +423,12 @@
               "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "iconAlign": "left",
               "defaultText": "{{Users.selectedRow.name}}"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Button1",
               "onClick": "{{showAlert('ok')}}",
               "buttonColor": "#03B365",
@@ -395,6 +451,7 @@
               "text": "Submit",
               "isDisabled": false,
               "key": "yet68vxr6o",
+              "labelTextSize": "0.875rem",
               "rightColumn": 61,
               "isDefaultClickDisabled": true,
               "widgetId": "eide1s93zo",
@@ -404,12 +461,16 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
             {
+              "setAdaptiveYMin": false,
+              "boxShadow": "none",
               "widgetName": "Chart1",
               "allowScroll": false,
+              "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
               "topRow": 46,
@@ -458,6 +519,7 @@
                 }
               },
               "key": "z638ekz6uv",
+              "labelTextSize": "0.875rem",
               "rightColumn": 29,
               "widgetId": "6lkbq56ui6",
               "isVisible": true,
@@ -468,6 +530,7 @@
               "isLoading": false,
               "yAxisName": "Revenue($)",
               "chartName": "Sales Report",
+              "borderRadius": "0px",
               "xAxisName": "Product Line",
               "chartType": "PIE_CHART"
             }

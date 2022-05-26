@@ -19,70 +19,51 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "Text1",
-              "rightColumn": 12,
-              "textAlign": "LEFT",
-              "widgetId": "uhe8hpkvld",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "topRow": 3,
               "bottomRow": 7,
               "parentRowSpace": 40,
-              "isVisible": true,
               "type": "TEXT_WIDGET",
+              "parentColumnSpace": 74,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "fontFamily": "System Default",
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "text": "👫 Customers",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 12,
+              "textAlign": "LEFT",
+              "widgetId": "uhe8hpkvld",
+              "isVisible": true,
               "fontStyle": "BOLD",
               "version": 1,
               "textColor": "#231F20",
               "parentId": "0",
               "isLoading": false,
-              "parentColumnSpace": 74,
-              "dynamicTriggerPathList": [],
-              "overflow": "NONE",
-              "leftColumn": 0,
-              "dynamicBindingPathList": [],
-              "fontSize": "HEADING1",
-              "text": "👫 Customers"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
-              "widgetName": "CustomersTable",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "id",
-                "gender",
-                "latitude",
-                "longitude",
-                "dob",
-                "phone",
-                "email",
-                "image",
-                "country",
-                "name"
-              ],
+              "boxShadow": "none",
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
-              "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 7,
-              "bottomRow": 67,
-              "parentRowSpace": 10,
               "isSortable": true,
               "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
-              "hideCard": false,
-              "parentColumnSpace": 17.28125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onRowSelected"
-                },
-                {
-                  "key": "onSearchTextChanged"
-                }
-              ],
               "dynamicBindingPathList": [
                 {
                   "key": "primaryColumns.id.computedValue"
@@ -116,9 +97,73 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 0,
+              "delimiter": ",",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "onSearchTextChanged": "",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
+              "primaryColumnId": "id",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              },
+              "widgetName": "CustomersTable",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id",
+                "gender",
+                "latitude",
+                "longitude",
+                "dob",
+                "phone",
+                "email",
+                "image",
+                "country",
+                "name"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 67,
+              "parentRowSpace": 10,
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "parentColumnSpace": 17.28125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                },
+                {
+                  "key": "onSearchTextChanged"
+                }
+              ],
               "primaryColumns": {
                 "id": {
                   "index": 0,
@@ -127,7 +172,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -135,7 +180,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "name": {
                   "index": 1,
@@ -144,7 +191,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -152,7 +199,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "gender": {
                   "index": 1,
@@ -161,7 +210,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -169,7 +218,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "gender",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "latitude": {
                   "index": 2,
@@ -178,7 +229,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -186,7 +237,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "latitude",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "longitude": {
                   "index": 3,
@@ -195,7 +248,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -203,7 +256,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "longitude",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "dob": {
                   "index": 4,
@@ -212,7 +267,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -220,7 +275,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "dob",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "phone": {
                   "index": 5,
@@ -229,7 +286,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -237,7 +294,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "phone",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "email": {
                   "index": 6,
@@ -246,7 +305,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -254,7 +313,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "email",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.email))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "image": {
                   "index": 7,
@@ -263,7 +324,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": false,
@@ -271,7 +332,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "image",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.image))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.image))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "country": {
                   "index": 8,
@@ -280,7 +343,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -288,44 +351,39 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "country",
-                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.country))}}"
+                  "computedValue": "{{CustomersTable.sanitizedTableData.map((currentRow) => ( currentRow.country))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
-              "delimiter": ",",
               "onRowSelected": "",
               "defaultSearchText": "",
               "key": "gsiv88orej",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 34,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "rsrxzwk730",
-              "isVisibleFilters": true,
               "tableData": "{{getCustomers.data}}",
-              "isVisible": true,
               "label": "Data",
               "searchKey": "",
-              "version": 3,
-              "totalRecordsCount": 0,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false,
-              "onSearchTextChanged": "",
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "isVisiblePagination": true,
-              "primaryColumnId": "id",
-              "verticalAlignment": "CENTER",
-              "columnSizeMap": {
-                "task": 245,
-                "step": 62,
-                "status": 75
-              }
+              "verticalAlignment": "CENTER"
             },
             {
-              "boxShadow": "NONE",
+              "boxShadow": "none",
               "widgetName": "CustomersInfo",
               "borderColor": "transparent",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
               "topRow": 2,
@@ -336,6 +394,8 @@
               "leftColumn": 35,
               "children": [
                 {
+                  "labelTextSize": "0.875rem",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "detachFromLayout": true,
                   "displayName": "Canvas",
@@ -353,9 +413,16 @@
                   "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
+                  "borderRadius": "0px",
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text2",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 1,
@@ -364,11 +431,13 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 1,
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "👨‍💼 Customer Update Form",
                       "key": "m2bujqziwn",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 49,
                       "textAlign": "LEFT",
                       "widgetId": "u5zl7k1fm2",
@@ -379,9 +448,11 @@
                       "parentId": "miv5ke3zm5",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING2"
+                      "borderRadius": "0px",
+                      "fontSize": "1.125rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "DisplayImage",
                       "displayName": "Image",
                       "iconSVG": "/static/media/icon.52d8fb96.svg",
@@ -400,6 +471,7 @@
                       ],
                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                       "key": "2bsguevay3",
+                      "labelTextSize": "0.875rem",
                       "image": "{{CustomersTable.selectedRow.image}}",
                       "rightColumn": 17,
                       "objectFit": "contain",
@@ -411,9 +483,11 @@
                       "isLoading": false,
                       "maxZoomLevel": 1,
                       "enableDownload": false,
+                      "borderRadius": "0px",
                       "enableRotation": false
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text3",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -423,11 +497,13 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 19,
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Name",
                       "key": "m2bujqziwn",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 27,
                       "textAlign": "LEFT",
                       "widgetId": "t8ldx9af8t",
@@ -438,9 +514,11 @@
                       "parentId": "miv5ke3zm5",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "NameInput",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -457,6 +535,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultText"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "labelPosition": "Left",
@@ -464,9 +545,11 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "p440hjppgd",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 62,
                       "widgetId": "xqxvaiubts",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "Label",
                       "version": 2,
@@ -474,10 +557,12 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": "{{CustomersTable.selectedRow.name}}"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text4",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -487,11 +572,13 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 19,
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Email",
                       "key": "m2bujqziwn",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 27,
                       "textAlign": "LEFT",
                       "widgetId": "sr2ptponkd",
@@ -502,9 +589,11 @@
                       "parentId": "miv5ke3zm5",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "EmailInput",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -521,6 +610,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultText"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "labelPosition": "Left",
@@ -528,9 +620,11 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "p440hjppgd",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 62,
                       "widgetId": "g6222ntio0",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "Label",
                       "version": 2,
@@ -538,10 +632,12 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": "{{CustomersTable.selectedRow.email}}"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text5",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -551,11 +647,13 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 19,
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
                       "text": "Country",
                       "key": "m2bujqziwn",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 29,
                       "textAlign": "LEFT",
                       "widgetId": "ktjazktzjf",
@@ -566,9 +664,11 @@
                       "parentId": "miv5ke3zm5",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "CountryInput",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -585,6 +685,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultText"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "labelPosition": "Left",
@@ -592,9 +695,11 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "p440hjppgd",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 62,
                       "widgetId": "zofov5clt2",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "Label",
                       "version": 2,
@@ -602,6 +707,7 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": "{{CustomersTable.selectedRow.country}}"
                     }
@@ -611,6 +717,7 @@
               ],
               "borderWidth": "0",
               "key": "1awygzttbb",
+              "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
               "rightColumn": 64,
               "widgetId": "4jx7qy2x7x",
@@ -620,9 +727,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "0"
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "UpdateButton",
               "onClick": "{{updateCustomerInfo.run(() => getCustomers.run(), () => {})}}",
               "buttonColor": "#03B365",
@@ -646,6 +754,7 @@
               "text": "Click to Update",
               "isDisabled": false,
               "key": "ra1lty8g9q",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "isDefaultClickDisabled": true,
               "widgetId": "w1ihrpgbcz",
@@ -655,6 +764,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }

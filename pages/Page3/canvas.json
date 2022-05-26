@@ -1,0 +1,411 @@
+{
+  "unpublishedPage": {
+    "name": "Page3",
+    "slug": "page3",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 710,
+          "containerStyle": "none",
+          "snapRows": 71,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 58,
+          "minHeight": 720,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "allTaskStats",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "name",
+                "group",
+                "delay_rate",
+                "total_task",
+                "finish_count",
+                "delay",
+                "plan_cost",
+                "real_cost",
+                "customColumn1",
+                "customColumn2"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 9,
+              "bottomRow": 37,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.group.computedValue"
+                },
+                {
+                  "key": "primaryColumns.delay_rate.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total_task.computedValue"
+                },
+                {
+                  "key": "primaryColumns.finish_count.computedValue"
+                },
+                {
+                  "key": "primaryColumns.delay.computedValue"
+                },
+                {
+                  "key": "primaryColumns.plan_cost.computedValue"
+                },
+                {
+                  "key": "primaryColumns.real_cost.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "customColumn1": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "小组",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "customColumn2": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "总任务延期率",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "name": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "姓名",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "cellBackground": ""
+                },
+                "group": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "group",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "小组",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.group))}}",
+                  "cellBackground": ""
+                },
+                "delay_rate": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "delay_rate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "延期率",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay_rate))}}",
+                  "cellBackground": ""
+                },
+                "total_task": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "total_task",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "总任务数",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
+                  "cellBackground": ""
+                },
+                "finish_count": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "finish_count",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "完成任务数",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.finish_count))}}",
+                  "cellBackground": ""
+                },
+                "delay": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "delay",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "延期任务数",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
+                  "cellBackground": ""
+                },
+                "plan_cost": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "plan_cost",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "计划工时",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.plan_cost))}}",
+                  "cellBackground": ""
+                },
+                "real_cost": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "real_cost",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "实际工时",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.real_cost))}}",
+                  "cellBackground": ""
+                }
+              },
+              "delimiter": ",",
+              "key": "cs1sv4qxvx",
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "小组",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "customColumn2": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "customColumn2",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "总任务延期率",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                }
+              },
+              "rightColumn": 49,
+              "textSize": "0.875rem",
+              "widgetId": "4hal0x3h2b",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "tableData": "{{getAllTaskStats.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page3_getAllTaskStats",
+              "name": "getAllTaskStats",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "MainContainer",
+          "allTaskStats"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page3",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6275cbe35984be5f5784f46d_628f18d87901344ba8d2ca8e"
+}
