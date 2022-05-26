@@ -37,9 +37,7 @@
                 "finish_count",
                 "delay",
                 "plan_cost",
-                "real_cost",
-                "customColumn1",
-                "customColumn2"
+                "real_cost"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -113,38 +111,6 @@
               ],
               "leftColumn": 0,
               "primaryColumns": {
-                "customColumn1": {
-                  "index": 1,
-                  "width": 150,
-                  "id": "customColumn1",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "小组",
-                  "computedValue": "",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                },
-                "customColumn2": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "customColumn2",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "总任务延期率",
-                  "computedValue": "",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                },
                 "name": {
                   "index": 0,
                   "width": 150,
@@ -300,40 +266,7 @@
               },
               "delimiter": ",",
               "key": "cs1sv4qxvx",
-              "derivedColumns": {
-                "customColumn1": {
-                  "index": 1,
-                  "width": 150,
-                  "id": "customColumn1",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "小组",
-                  "computedValue": "",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                },
-                "customColumn2": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "customColumn2",
-                  "columnType": "text",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "总任务延期率",
-                  "computedValue": "",
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                }
-              },
+              "derivedColumns": {},
               "rightColumn": 50,
               "textSize": "0.875rem",
               "widgetId": "4hal0x3h2b",
@@ -369,7 +302,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "isVisiblePagination": false,
+              "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
                 "task": 245,
