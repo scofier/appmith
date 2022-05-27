@@ -187,7 +187,7 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "总任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( navigateTo(\"Page1\",\"\")))}}",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( navigateTo(\"Page1\")))}}",
                   "cellBackground": "",
                   "iconName": "",
                   "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}"
@@ -272,7 +272,7 @@
               "delimiter": ",",
               "key": "cs1sv4qxvx",
               "derivedColumns": {},
-              "rightColumn": 63,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "4hal0x3h2b",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
