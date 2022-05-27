@@ -52,7 +52,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.total_task.onClick"
+                }
+              ],
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -110,6 +114,27 @@
                 },
                 {
                   "key": "primaryColumns.total_task.computedValue"
+                },
+                {
+                  "key": "derivedColumns.total_task.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.total_task.buttonColor"
+                },
+                {
+                  "key": "derivedColumns.total_task.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.total_task.borderRadius"
+                },
+                {
+                  "key": "derivedColumns.total_task.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.total_task.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.total_task.buttonLabel"
                 }
               ],
               "leftColumn": 0,
@@ -177,7 +202,7 @@
                   "id": "total_task",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "url",
+                  "columnType": "button",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -190,7 +215,12 @@
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( '/customer-support-dashboard/page2-6275cfb65984be5f5784f50e?name=' + currentRow.name))}}",
                   "cellBackground": "",
                   "iconName": "",
-                  "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}"
+                  "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
+                  "onClick": "{{navigateTo('Page2','name=' + name,'NEW_WINDOW')}}"
                 },
                 "finish_count": {
                   "index": 4,
@@ -271,7 +301,13 @@
               },
               "delimiter": ",",
               "key": "cs1sv4qxvx",
-              "derivedColumns": {},
+              "derivedColumns": {
+                "total_task": {
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}"
+                }
+              },
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "4hal0x3h2b",
