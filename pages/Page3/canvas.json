@@ -187,7 +187,7 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "总任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( navigateTo(\"Page1\")))}}",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( '/page2-6275cfb65984be5f5784f50e?name=' + currentRow.name))}}",
                   "cellBackground": "",
                   "iconName": "",
                   "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}"
