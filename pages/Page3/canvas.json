@@ -40,7 +40,11 @@
                 "real_cost"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.total_task.onClick"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 0,
@@ -220,7 +224,7 @@
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "onClick": "{{navigateTo('Page2','name=' + name,'NEW_WINDOW')}}"
+                  "onClick": "{{navigateTo('Page2',{\"name\":currentRow.name},'NEW_WINDOW')}}"
                 },
                 "finish_count": {
                   "index": 4,
