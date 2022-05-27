@@ -224,7 +224,7 @@
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "onClick": "{{navigateTo('Page2',{\"name\":currentRow.name},'NEW_WINDOW')}}"
+                  "onClick": "{{navigateTo('Page2',{\"name\":currentRow.name})}}"
                 },
                 "finish_count": {
                   "index": 4,
