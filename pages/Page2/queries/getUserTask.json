@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM task_qjl_1 where name = {{appsmith.URL.queryParams[\"name\"]}};\n",
+      "body": "SELECT name,标题,状态,预估工时,预计结束 FROM task_qjl_1 where name = `{{appsmith.URL.queryParams[\"name\"]}}`;\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
