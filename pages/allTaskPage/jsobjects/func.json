@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "func",
-    "pageId": "Page2",
+    "pageId": "allTaskPage",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -18,7 +18,7 @@
       }
     ]
   },
-  "id": "Page2_func",
+  "id": "allTaskPage_func",
   "deleted": false,
   "gitSyncId": "6275cbe35984be5f5784f46d_62943bfcb4c51656bfeb0999"
 }

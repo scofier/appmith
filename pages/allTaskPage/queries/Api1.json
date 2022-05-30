@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "Api1",
     "datasource": {
       "name": "qjl_task",
       "pluginId": "google-sheets-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page2",
+    "pageId": "allTaskPage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -95,7 +95,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page2_Query1",
+  "id": "allTaskPage_Api1",
   "deleted": false,
-  "gitSyncId": "6275cbe35984be5f5784f46d_628e03087901344ba8d2855d"
+  "gitSyncId": "6275cbe35984be5f5784f46d_628e02c27901344ba8d28555"
 }

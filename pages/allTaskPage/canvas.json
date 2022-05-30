@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page2",
-    "slug": "page2",
+    "name": "allTaskPage",
+    "slug": "alltaskpage",
     "layouts": [
       {
         "viewMode": false,
@@ -53,9 +53,9 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "姓名:{{appsmith.URL.queryParams[\"name\"]}}",
+              "text": "全部任务，姓名:{{appsmith.URL.queryParams[\"name\"]}}",
               "key": "0udhei752k",
-              "rightColumn": 16,
+              "rightColumn": 27,
               "textAlign": "LEFT",
               "widgetId": "n39dri8o1l",
               "isVisible": true,
@@ -281,7 +281,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page2_getUserTask",
+              "id": "allTaskPage_getUserTask",
               "name": "getUserTask",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -298,14 +298,15 @@
           "Text2"
         ],
         "validOnPageLoadActions": true,
-        "id": "Page2",
+        "id": "allTaskPage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

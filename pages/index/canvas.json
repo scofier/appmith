@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page3",
-    "slug": "page3",
+    "name": "index",
+    "slug": "index",
     "layouts": [
       {
         "viewMode": false,
@@ -44,6 +44,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "primaryColumns.total_task.onClick"
+                },
+                {
+                  "key": "primaryColumns.delay.onClick"
                 }
               ],
               "displayName": "Table",
@@ -60,6 +63,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "primaryColumns.total_task.onClick"
+                },
+                {
+                  "key": "primaryColumns.delay.onClick"
                 }
               ],
               "dynamicBindingPathList": [
@@ -140,6 +146,27 @@
                 },
                 {
                   "key": "primaryColumns.total_task.buttonLabel"
+                },
+                {
+                  "key": "derivedColumns.delay.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.delay.buttonColor"
+                },
+                {
+                  "key": "derivedColumns.delay.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.delay.borderRadius"
+                },
+                {
+                  "key": "derivedColumns.delay.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.delay.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.delay.buttonLabel"
                 }
               ],
               "leftColumn": 0,
@@ -225,7 +252,7 @@
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "onClick": "{{navigateTo('Page2',{\"name\":currentRow.name},\"NEW_WINDOW\")}}"
+                  "onClick": "{{navigateTo('allTaskPage',{\"name\":currentRow.name},\"NEW_WINDOW\")}}"
                 },
                 "finish_count": {
                   "index": 4,
@@ -252,7 +279,7 @@
                   "id": "delay",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "button",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -263,7 +290,13 @@
                   "isDerived": false,
                   "label": "延期任务数",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
+                  "iconName": "",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
+                  "onClick": "{{navigateTo('delayTaskPage',{\"name\":currentRow.name},\"NEW_WINDOW\")}}"
                 },
                 "plan_cost": {
                   "index": 6,
@@ -467,6 +500,11 @@
                   "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}"
+                },
+                "delay": {
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}"
                 }
               },
               "rightColumn": 64,
@@ -517,7 +555,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page3_getAllTaskStats",
+              "id": "index_getAllTaskStats",
               "name": "getAllTaskStats",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -531,14 +569,15 @@
           "allTaskStats"
         ],
         "validOnPageLoadActions": true,
-        "id": "Page3",
+        "id": "index",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

@@ -3,16 +3,18 @@
   "serverSchemaVersion": 4,
   "pageOrder": [
     "Page1",
-    "Page2",
-    "Page3"
+    "allTaskPage",
+    "index",
+    "delayTaskPage"
   ],
   "publishedPageOrder": [
     "Page1",
-    "Page2",
-    "Page3"
+    "allTaskPage",
+    "index",
+    "delayTaskPage"
   ],
-  "publishedDefaultPageName": "Page1",
-  "unpublishedDefaultPageName": "Page1",
+  "publishedDefaultPageName": "index",
+  "unpublishedDefaultPageName": "index",
   "invisibleActionFields": {
     "Page1_getCustomers": {
       "unpublishedUserSetOnLoad": false,
@@ -22,35 +24,67 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_Api1": {
+    "allTaskPage_Api1": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_Query1": {
+    "allTaskPage_Query1": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_func.getURLParam": {
+    "allTaskPage_func.getURLParam": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_func.myFun2": {
+    "allTaskPage_func.myFun2": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_getUserTask": {
+    "allTaskPage_getUserTask": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_getUsers": {
+    "allTaskPage_getUsers": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_statusStats": {
+    "allTaskPage_statusStats": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page3_getAllTaskStats": {
+    "delayTaskPage_Api1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_Query1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_func.getURLParam": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_func.myFun2": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_getDelayTask": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_getUserTask": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_getUsers": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "delayTaskPage_statusStats": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "index_getAllTaskStats": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
