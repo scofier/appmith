@@ -2,34 +2,18 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "Page1",
     "allTaskPage",
-    "index"
+    "index",
+    "dashboard"
   ],
   "publishedPageOrder": [
-    "Page1",
     "allTaskPage",
-    "index"
+    "index",
+    "dashboard"
   ],
   "publishedDefaultPageName": "index",
   "unpublishedDefaultPageName": "index",
   "invisibleActionFields": {
-    "Page1_getCustomers": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "Page1_updateCustomerInfo": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "allTaskPage_Api1": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "allTaskPage_Query1": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
     "allTaskPage_func.getURLParam": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -42,11 +26,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "allTaskPage_getUsers": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "allTaskPage_statusStats": {
+    "dashboard_globalStats": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
