@@ -97,9 +97,6 @@
                   "key": "childStylesheet.iconButton.borderRadius"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.name.computedValue"
                 },
                 {
@@ -164,6 +161,9 @@
                 },
                 {
                   "key": "primaryColumns.delay.buttonLabel"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "leftColumn": 0,
@@ -441,7 +441,7 @@
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "iconName": "",
-                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task)))}}",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task) + ' 个'))}}",
                   "onClick": "{{navigateTo(\"allTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
                 },
                 "finish_count": {
@@ -485,7 +485,7 @@
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "iconName": "",
-                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.delay)))}}",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.delay) + ' 个'))}}",
                   "onClick": "{{navigateTo(\"delayTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
                 }
               },

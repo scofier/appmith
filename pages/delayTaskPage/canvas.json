@@ -77,7 +77,8 @@
                 "title",
                 "status",
                 "plan_cost",
-                "plan_finish"
+                "plan_finish",
+                "finish_time"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -138,6 +139,9 @@
                 },
                 {
                   "key": "primaryColumns.plan_finish.computedValue"
+                },
+                {
+                  "key": "primaryColumns.finish_time.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -226,6 +230,25 @@
                   "isDerived": false,
                   "label": "预计完成时间",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.plan_finish))}}"
+                },
+                "finish_time": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "finish_time",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "完成时间",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.finish_time))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",
