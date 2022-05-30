@@ -72,10 +72,6 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "delayTaskPage_getUserTask": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
     "delayTaskPage_getUsers": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
