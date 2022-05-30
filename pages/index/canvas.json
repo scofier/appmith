@@ -41,7 +41,14 @@
                 "undefined"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.total_task.onClick"
+                },
+                {
+                  "key": "primaryColumns.delay.onClick"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 0,
@@ -53,7 +60,14 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.total_task.onClick"
+                },
+                {
+                  "key": "primaryColumns.delay.onClick"
+                }
+              ],
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -126,6 +140,30 @@
                 },
                 {
                   "key": "primaryColumns.delay.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total_task.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.total_task.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.total_task.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.total_task.buttonLabel"
+                },
+                {
+                  "key": "primaryColumns.delay.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.delay.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.delay.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.delay.buttonLabel"
                 }
               ],
               "leftColumn": 0,
@@ -387,7 +425,7 @@
                   "id": "total_task",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "button",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -396,9 +434,15 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "total_task",
+                  "label": "全部任务",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
+                  "iconName": "",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task)))}}",
+                  "onClick": "{{navigateTo(\"allTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
                 },
                 "finish_count": {
                   "index": 4,
@@ -415,7 +459,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "finish_count",
+                  "label": "完成任务",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.finish_count))}}",
                   "cellBackground": ""
                 },
@@ -425,7 +469,7 @@
                   "id": "delay",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "button",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -434,9 +478,15 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "delay",
+                  "label": "延期任务",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
+                  "iconName": "",
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.delay)))}}",
+                  "onClick": "{{navigateTo(\"delayTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
                 }
               },
               "delimiter": ",",
