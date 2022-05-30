@@ -271,9 +271,10 @@
               "columnSizeMap": {
                 "task": 245,
                 "step": 62,
-                "status": 75,
-                "title": 292,
-                "handler": 128
+                "status": 93,
+                "title": 439,
+                "handler": 91,
+                "plan_cost": 105
               }
             }
           ]
