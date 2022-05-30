@@ -2,17 +2,17 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "allTaskPage",
     "dashboard",
-    "index"
+    "homePage",
+    "allTaskPage"
   ],
   "publishedPageOrder": [
-    "allTaskPage",
     "dashboard",
-    "index"
+    "homePage",
+    "allTaskPage"
   ],
-  "publishedDefaultPageName": "index",
-  "unpublishedDefaultPageName": "index",
+  "publishedDefaultPageName": "homePage",
+  "unpublishedDefaultPageName": "homePage",
   "invisibleActionFields": {
     "allTaskPage_func.getURLParam": {
       "unpublishedUserSetOnLoad": false,
@@ -34,7 +34,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "index_getAllTaskStats": {
+    "homePage_getAllTaskStats": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }

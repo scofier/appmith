@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "index",
+    "pageId": "homePage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "index_getAllTaskStats",
+  "id": "homePage_getAllTaskStats",
   "deleted": false,
   "gitSyncId": "6275cbe35984be5f5784f46d_628f29e87901344ba8d2ce55"
 }

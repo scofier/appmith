@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "index",
-    "slug": "index",
+    "name": "homePage",
+    "slug": "homepage",
     "layouts": [
       {
         "viewMode": false,
@@ -558,7 +558,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "index_getAllTaskStats",
+              "id": "homePage_getAllTaskStats",
               "name": "getAllTaskStats",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -572,7 +572,7 @@
           "allTaskStats"
         ],
         "validOnPageLoadActions": true,
-        "id": "index",
+        "id": "homePage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
