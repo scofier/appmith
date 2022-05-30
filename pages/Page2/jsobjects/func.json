@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tgetURLParam: (key) => {\n\t\t//write code here\n\t\tvar find = appsmith.URL.queryParams[key];\n\t\tif(undefined === find) {\n\t\t\tfind = \"\"\n\t\t}\n\t\treturn find;\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tgetURLParam: (key) => {\n\t\t//write code here\n\t\tvar find = appsmith.URL.queryParams[key];\n\t\tif(undefined === find) {\n\t\t\tfind = \"刘劲飞\"\n\t\t}\n\t\treturn find;\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",

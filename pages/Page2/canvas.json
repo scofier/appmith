@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 790,
           "containerStyle": "none",
           "snapRows": 71,
           "parentRowSpace": 1,
@@ -70,20 +70,21 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "userTask",
+              "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "step",
-                "task",
+                "handler",
+                "title",
                 "status",
-                "action"
+                "plan_cost",
+                "plan_finish"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
-              "topRow": 16,
-              "bottomRow": 74,
+              "topRow": 14,
+              "bottomRow": 77,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -122,16 +123,117 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.handler.computedValue"
+                },
+                {
+                  "key": "primaryColumns.title.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.plan_cost.computedValue"
+                },
+                {
+                  "key": "primaryColumns.plan_finish.computedValue"
                 }
               ],
               "leftColumn": 0,
-              "primaryColumns": {},
+              "primaryColumns": {
+                "handler": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "handler",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "处理人",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.handler))}}"
+                },
+                "title": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "title",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "名称",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
+                },
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "状态",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.status))}}"
+                },
+                "plan_cost": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "plan_cost",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "计划工时",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.plan_cost))}}"
+                },
+                "plan_finish": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "plan_finish",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "预计完成时间",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.plan_finish))}}"
+                }
+              },
               "delimiter": ",",
-              "key": "cs1sv4qxvx",
+              "key": "6bf34xhano",
               "derivedColumns": {},
               "rightColumn": 64,
               "textSize": "0.875rem",
-              "widgetId": "zyuljvf2a5",
+              "widgetId": "nklm2em3zk",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{getUserTask.data}}",
@@ -190,8 +292,8 @@
         ],
         "widgetNames": [
           "MainContainer",
-          "Text2",
-          "userTask"
+          "Table1",
+          "Text2"
         ],
         "validOnPageLoadActions": true,
         "id": "Page2",
