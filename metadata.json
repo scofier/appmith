@@ -30,6 +30,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "Page2_getUserTask": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "Page2_getUsers": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false

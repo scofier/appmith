@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 800,
+          "bottomRow": 710,
           "containerStyle": "none",
           "snapRows": 71,
           "parentRowSpace": 1,
@@ -48,7 +48,7 @@
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 12,
-              "bottomRow": 40,
+              "bottomRow": 68,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -101,7 +101,7 @@
                   "key": "accentColor"
                 }
               ],
-              "leftColumn": 5,
+              "leftColumn": 0,
               "primaryColumns": {
                 "status": {
                   "index": 2,
@@ -338,12 +338,12 @@
               "key": "61dyn7w89a",
               "derivedColumns": {},
               "labelTextSize": "0.875rem",
-              "rightColumn": 39,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "7ntdhf2y0y",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": false,
-              "tableData": "{{getUsers.data}}",
+              "tableData": "{{getUserTask.data}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -382,207 +382,11 @@
               }
             },
             {
-              "boxShadow": "none",
-              "widgetName": "Input1",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595.svg",
-              "topRow": 22,
-              "bottomRow": 26,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 44,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Left",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "b27fx4g94a",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 64,
-              "widgetId": "sh4ayxoz3u",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "Label",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "iconAlign": "left",
-              "defaultText": "{{Users.selectedRow.name}}"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "Button1",
-              "onClick": "{{showAlert('ok')}}",
-              "buttonColor": "#03B365",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca02633.svg",
-              "topRow": 44,
-              "bottomRow": 48,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 45,
-              "dynamicBindingPathList": [],
-              "text": "Submit",
-              "isDisabled": false,
-              "key": "yet68vxr6o",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 61,
-              "isDefaultClickDisabled": true,
-              "widgetId": "eide1s93zo",
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "setAdaptiveYMin": false,
-              "boxShadow": "none",
-              "widgetName": "Chart1",
-              "allowScroll": false,
-              "dynamicPropertyPathList": [],
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 46,
-              "bottomRow": 78,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "rjn5t50ck9": {
-                  "seriesName": "Sales",
-                  "data": "{{statusStats.data}}"
-                }
-              },
-              "animateLoading": true,
-              "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 5,
-              "dynamicBindingPathList": [
-                {
-                  "key": "chartData.rjn5t50ck9.data"
-                }
-              ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion"
-                  },
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ]
-                }
-              },
-              "key": "z638ekz6uv",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 29,
-              "widgetId": "6lkbq56ui6",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "labelOrientation": "auto",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
-              "borderRadius": "0px",
-              "xAxisName": "Product Line",
-              "chartType": "PIE_CHART"
-            },
-            {
-              "widgetName": "Text1",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 2,
-              "bottomRow": 6,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 42,
-              "dynamicBindingPathList": [
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "text"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{name}}",
-              "key": "0udhei752k",
-              "rightColumn": 58,
-              "textAlign": "LEFT",
-              "widgetId": "oaixd743hp",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "fontSize": "1rem"
-            },
-            {
               "widgetName": "Text2",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 6,
-              "bottomRow": 10,
+              "topRow": 5,
+              "bottomRow": 9,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -591,7 +395,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 45,
+              "leftColumn": 22,
               "dynamicBindingPathList": [
                 {
                   "key": "fontFamily"
@@ -605,9 +409,9 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "abc:{{appsmith.URL.queryParams[\"name\"]}}",
+              "text": "姓名:{{appsmith.URL.queryParams[\"name\"]}}",
               "key": "0udhei752k",
-              "rightColumn": 61,
+              "rightColumn": 38,
               "textAlign": "LEFT",
               "widgetId": "n39dri8o1l",
               "isVisible": true,
@@ -625,29 +429,19 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page2_getUsers",
-              "name": "getUsers",
+              "id": "Page2_getUserTask",
+              "name": "getUserTask",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Page2_statusStats",
-              "name": "statusStats",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams[\"name\"]"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "widgetNames": [
-          "Button1",
-          "Chart1",
-          "Input1",
           "MainContainer",
-          "Text1",
           "Text2",
           "Users"
         ],
