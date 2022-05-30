@@ -19,10 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(String ) => {\n\t\t//write code here\n\t}",
+      "body": "(key) => {\n\t\t//write code here\n\t\tvar find = appsmith.URL.queryParams[key];\n\t\tif(undefined === find) {\n\t\t\tfind = \"\"\n\t\t}\n\t\treturn find;\n\t}",
       "jsArguments": [
         {
-          "name": "String"
+          "name": "key"
         }
       ],
       "isAsync": false
@@ -38,7 +38,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(String ) => {\n\t\t//write code here\n\t}"
+      "(key) => {\n\t\t//write code here\n\t\tvar find = appsmith.URL.queryParams[key];\n\t\tif(undefined === find) {\n\t\t\tfind = \"\"\n\t\t}\n\t\treturn find;\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
