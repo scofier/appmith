@@ -167,9 +167,6 @@
                 },
                 {
                   "key": "primaryColumns.delay.menuButtonLabel"
-                },
-                {
-                  "key": "primaryColumns.total_task.buttonColor"
                 }
               ],
               "leftColumn": 0,
@@ -443,12 +440,13 @@
                   "label": "全部任务",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
                   "cellBackground": "",
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "buttonColor": "#fff",
                   "borderRadius": "1.5rem",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "iconName": "",
-                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task) + ' 个'))}}",
-                  "onClick": "{{navigateTo(\"allTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
+                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task) + ' (查看)'))}}",
+                  "onClick": "{{navigateTo(\"allTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}",
+                  "buttonVariant": "PRIMARY"
                 },
                 "finish_count": {
                   "index": 4,
