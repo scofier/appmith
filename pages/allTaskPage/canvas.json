@@ -73,11 +73,14 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
+                "ID",
                 "handler",
                 "title",
                 "status",
                 "plan_cost",
-                "plan_finish"
+                "plan_finish",
+                "delay",
+                "finish_time"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -138,6 +141,18 @@
                 },
                 {
                   "key": "primaryColumns.plan_finish.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.delay.computedValue"
+                },
+                {
+                  "key": "primaryColumns.finish_time.computedValue"
+                },
+                {
+                  "key": "primaryColumns.title.displayText"
                 }
               ],
               "leftColumn": 0,
@@ -165,7 +180,7 @@
                   "id": "title",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "url",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -174,7 +189,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "名称",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'https://www.tapd.cn/57693668/prong/tasks/view/' + currentRow.ID))}}",
+                  "iconName": "",
+                  "displayText": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.title))}}"
                 },
                 "status": {
                   "index": 2,
@@ -226,6 +243,63 @@
                   "isDerived": false,
                   "label": "预计完成时间",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.plan_finish))}}"
+                },
+                "ID": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ID",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ID))}}",
+                  "cellBackground": ""
+                },
+                "delay": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "delay",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "延期情况",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.delay === 1?\"延期\":\"\"))}}",
+                  "cellBackground": ""
+                },
+                "finish_time": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "finish_time",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "finish_time",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.finish_time))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",

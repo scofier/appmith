@@ -139,12 +139,6 @@
                   "key": "primaryColumns.delay.computedValue"
                 },
                 {
-                  "key": "primaryColumns.total_task.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.total_task.borderRadius"
-                },
-                {
                   "key": "primaryColumns.total_task.boxShadow"
                 },
                 {
@@ -164,6 +158,18 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "derivedColumns.delay.menuColor"
+                },
+                {
+                  "key": "primaryColumns.delay.menuColor"
+                },
+                {
+                  "key": "primaryColumns.delay.menuButtonLabel"
+                },
+                {
+                  "key": "primaryColumns.total_task.buttonColor"
                 }
               ],
               "leftColumn": 0,
@@ -437,8 +443,8 @@
                   "label": "全部任务",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
                   "cellBackground": "",
-                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "1.5rem",
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "iconName": "",
                   "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.total_task) + ' 个'))}}",
@@ -469,7 +475,7 @@
                   "id": "delay",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "button",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "enableFilter": true,
@@ -486,7 +492,9 @@
                   "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
                   "iconName": "",
                   "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( Number(currentRow.delay) + ' 个'))}}",
-                  "onClick": "{{navigateTo(\"delayTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}"
+                  "onClick": "{{navigateTo(\"delayTaskPage\",{name:currentRow.name},\"NEW_WINDOW\")}}",
+                  "menuColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+                  "menuButtonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}"
                 }
               },
               "delimiter": ",",
@@ -500,7 +508,8 @@
                 "delay": {
                   "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
                   "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}"
+                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
+                  "menuColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}"
                 }
               },
               "rightColumn": 64,
