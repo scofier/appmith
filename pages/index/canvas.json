@@ -33,9 +33,9 @@
                 "name",
                 "group",
                 "delay_rate",
-                "ifnull_total_task_0_",
-                "ifnull_finish_count_0_",
-                "ifnull_delay_0_",
+                "total_task",
+                "finish_count",
+                "delay",
                 "plan_cost",
                 "real_cost",
                 "undefined"
@@ -119,13 +119,13 @@
                   "key": "derivedColumns.delay.boxShadow"
                 },
                 {
-                  "key": "primaryColumns.ifnull_total_task_0_.computedValue"
+                  "key": "primaryColumns.total_task.computedValue"
                 },
                 {
-                  "key": "primaryColumns.ifnull_finish_count_0_.computedValue"
+                  "key": "primaryColumns.finish_count.computedValue"
                 },
                 {
-                  "key": "primaryColumns.ifnull_delay_0_.computedValue"
+                  "key": "primaryColumns.delay.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -381,10 +381,10 @@
                   ],
                   "index": 8
                 },
-                "ifnull_total_task_0_": {
+                "total_task": {
                   "index": 3,
                   "width": 150,
-                  "id": "ifnull_total_task_0_",
+                  "id": "total_task",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -396,14 +396,14 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "ifnull_total_task_0_",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_total_task_0_))}}",
+                  "label": "total_task",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
                   "cellBackground": ""
                 },
-                "ifnull_finish_count_0_": {
+                "finish_count": {
                   "index": 4,
                   "width": 150,
-                  "id": "ifnull_finish_count_0_",
+                  "id": "finish_count",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -415,14 +415,14 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "ifnull_finish_count_0_",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_finish_count_0_))}}",
+                  "label": "finish_count",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.finish_count))}}",
                   "cellBackground": ""
                 },
-                "ifnull_delay_0_": {
+                "delay": {
                   "index": 5,
                   "width": 150,
-                  "id": "ifnull_delay_0_",
+                  "id": "delay",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -434,8 +434,8 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "ifnull_delay_0_",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_delay_0_))}}",
+                  "label": "delay",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
                   "cellBackground": ""
                 }
               },
