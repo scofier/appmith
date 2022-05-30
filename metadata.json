@@ -26,6 +26,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "dashboard_getDayTaskStats": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "dashboard_globalStats": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false

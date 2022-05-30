@@ -918,21 +918,12 @@
               "hideCard": false,
               "chartData": {
                 "042h0vdobg": {
-                  "seriesName": "Sales",
-                  "data": [
-                    {
-                      "x": "Product1",
-                      "y": 20000
-                    },
-                    {
-                      "x": "Product2",
-                      "y": 22000
-                    },
-                    {
-                      "x": "Product3",
-                      "y": 32000
-                    }
-                  ]
+                  "seriesName": "完成任务",
+                  "data": "{{getDayTaskStats.data.map((row)=>{return {x: row.tm,y:row.total}})}}"
+                },
+                "f7dvmnavde": {
+                  "seriesName": "延期任务",
+                  "data": "{{getDayTaskStats.data.map((row)=>{return {x: row.tm,y:row.delay}})}}"
                 }
               },
               "animateLoading": true,
@@ -945,6 +936,12 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.042h0vdobg.data"
+                },
+                {
+                  "key": "chartData.f7dvmnavde.data"
                 }
               ],
               "customFusionChartConfig": {
@@ -985,7 +982,7 @@
               "chartName": "任务统计",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "chartType": "COLUMN_CHART"
+              "chartType": "LINE_CHART"
             }
           ]
         },
@@ -994,6 +991,16 @@
             {
               "id": "dashboard_globalStats",
               "name": "globalStats",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "dashboard_getDayTaskStats",
+              "name": "getDayTaskStats",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
