@@ -321,9 +321,9 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "-% more than last month",
+                      "text": "- % more than last month",
                       "key": "3q6c67jz81",
-                      "rightColumn": 40,
+                      "rightColumn": 37,
                       "textAlign": "LEFT",
                       "widgetId": "amjp6r0w5v",
                       "isVisible": true,
@@ -348,7 +348,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 60,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -359,7 +359,7 @@
                       ],
                       "isDisabled": false,
                       "key": "9pup3iygfp",
-                      "rightColumn": 64,
+                      "rightColumn": 62,
                       "iconName": "asterisk",
                       "widgetId": "kj9uz5svns",
                       "buttonStyle": "PRIMARY",
