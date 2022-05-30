@@ -33,22 +33,15 @@
                 "name",
                 "group",
                 "delay_rate",
-                "total_task",
-                "finish_count",
-                "delay",
+                "ifnull_total_task_0_",
+                "ifnull_finish_count_0_",
+                "ifnull_delay_0_",
                 "plan_cost",
                 "real_cost",
                 "undefined"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "primaryColumns.total_task.onClick"
-                },
-                {
-                  "key": "primaryColumns.delay.onClick"
-                }
-              ],
+              "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 0,
@@ -60,14 +53,7 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "primaryColumns.total_task.onClick"
-                },
-                {
-                  "key": "primaryColumns.delay.onClick"
-                }
-              ],
+              "dynamicTriggerPathList": [],
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -109,64 +95,37 @@
                   "key": "primaryColumns.delay_rate.computedValue"
                 },
                 {
-                  "key": "primaryColumns.finish_count.computedValue"
-                },
-                {
-                  "key": "primaryColumns.delay.computedValue"
-                },
-                {
                   "key": "primaryColumns.plan_cost.computedValue"
                 },
                 {
                   "key": "primaryColumns.real_cost.computedValue"
                 },
                 {
-                  "key": "primaryColumns.total_task.displayText"
-                },
-                {
-                  "key": "primaryColumns.total_task.computedValue"
-                },
-                {
                   "key": "derivedColumns.total_task.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.total_task.buttonColor"
                 },
                 {
                   "key": "derivedColumns.total_task.borderRadius"
                 },
                 {
-                  "key": "primaryColumns.total_task.borderRadius"
-                },
-                {
                   "key": "derivedColumns.total_task.boxShadow"
-                },
-                {
-                  "key": "primaryColumns.total_task.boxShadow"
-                },
-                {
-                  "key": "primaryColumns.total_task.buttonLabel"
                 },
                 {
                   "key": "derivedColumns.delay.buttonColor"
                 },
                 {
-                  "key": "primaryColumns.delay.buttonColor"
-                },
-                {
                   "key": "derivedColumns.delay.borderRadius"
-                },
-                {
-                  "key": "primaryColumns.delay.borderRadius"
                 },
                 {
                   "key": "derivedColumns.delay.boxShadow"
                 },
                 {
-                  "key": "primaryColumns.delay.boxShadow"
+                  "key": "primaryColumns.ifnull_total_task_0_.computedValue"
                 },
                 {
-                  "key": "primaryColumns.delay.buttonLabel"
+                  "key": "primaryColumns.ifnull_finish_count_0_.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ifnull_delay_0_.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -227,76 +186,6 @@
                   "label": "延期率",
                   "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay_rate))}}",
                   "cellBackground": ""
-                },
-                "total_task": {
-                  "index": 3,
-                  "width": 150,
-                  "id": "total_task",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "button",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "总任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( '/customer-support-dashboard/page2-6275cfb65984be5f5784f50e?name=' + currentRow.name))}}",
-                  "cellBackground": "",
-                  "iconName": "",
-                  "displayText": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
-                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.total_task))}}",
-                  "onClick": "{{navigateTo('allTaskPage',{\"name\":currentRow.name},\"NEW_WINDOW\")}}"
-                },
-                "finish_count": {
-                  "index": 4,
-                  "width": 150,
-                  "id": "finish_count",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "完成任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.finish_count))}}",
-                  "cellBackground": ""
-                },
-                "delay": {
-                  "index": 5,
-                  "width": 150,
-                  "id": "delay",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "button",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "延期任务数",
-                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
-                  "cellBackground": "",
-                  "buttonColor": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( 'none'))}}",
-                  "iconName": "",
-                  "buttonLabel": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.delay))}}",
-                  "onClick": "{{navigateTo('delayTaskPage',{\"name\":currentRow.name},\"NEW_WINDOW\")}}"
                 },
                 "plan_cost": {
                   "index": 6,
@@ -491,6 +380,63 @@
                     "none"
                   ],
                   "index": 8
+                },
+                "ifnull_total_task_0_": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "ifnull_total_task_0_",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ifnull_total_task_0_",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_total_task_0_))}}",
+                  "cellBackground": ""
+                },
+                "ifnull_finish_count_0_": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "ifnull_finish_count_0_",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ifnull_finish_count_0_",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_finish_count_0_))}}",
+                  "cellBackground": ""
+                },
+                "ifnull_delay_0_": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "ifnull_delay_0_",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ifnull_delay_0_",
+                  "computedValue": "{{allTaskStats.sanitizedTableData.map((currentRow) => ( currentRow.ifnull_delay_0_))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",
