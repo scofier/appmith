@@ -3,13 +3,13 @@
   "serverSchemaVersion": 4,
   "pageOrder": [
     "allTaskPage",
-    "index",
-    "dashboard"
+    "dashboard",
+    "index"
   ],
   "publishedPageOrder": [
     "allTaskPage",
-    "index",
-    "dashboard"
+    "dashboard",
+    "index"
   ],
   "publishedDefaultPageName": "index",
   "unpublishedDefaultPageName": "index",
