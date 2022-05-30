@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select u.name ,u.group,delay/total_task as delay_rate, ifnull(total_task,0) total_task , finish_count, delay,plan_cost ,real_cost from qjl_user u left join (select id,处理人,sum(预估工时) plan_cost,sum(完成工时) real_cost,COUNT(*) as total_task,sum(case when date_add(预计结束,interval 1 day)<完成时间 then 1 when 预计结束<now() and 状态<>\"已完成\" then 1 else 0 end) as delay,sum(case when 状态=\"已完成\" then 1 else 0 end) as finish_count from task_qjl_1  group by 处理人 ) as c on u.name=c.处理人 order by u.group desc ,delay_rate asc;\n",
+      "body": "select u.name ,u.group,delay/total_task as delay_rate, total_task , finish_count, delay,plan_cost ,real_cost from qjl_user u left join (select id,处理人,sum(预估工时) plan_cost,sum(完成工时) real_cost,COUNT(*) as total_task,sum(case when date_add(预计结束,interval 1 day)<完成时间 then 1 when 预计结束<now() and 状态<>\"已完成\" then 1 else 0 end) as delay,sum(case when 状态=\"已完成\" then 1 else 0 end) as finish_count from task_qjl_1  group by 处理人 ) as c on u.name=c.处理人 order by u.group desc ,delay_rate asc;\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
